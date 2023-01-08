@@ -1,3 +1,4 @@
+
 * {
     padding: 0;
     margin: 0;
@@ -105,7 +106,7 @@
       top: 75px;
       left: 0;
       width: 100%;
-      height: 50vh;
+      height: 100vh;
       background: #00429f;
       overflow: hidden;
       transition: max-height 0,5s;
@@ -124,13 +125,12 @@
     header i {
       color: white;
     }
-
-    
   
    
   }
   
-
+  /*--------header---------*/
+  /*--------home---------*/
   .home {
     height: 100vh;
     color: #fff;
@@ -162,7 +162,9 @@
   }
   
   
-
+  
+  /*--------home---------*/
+  /*--------book---------*/
   .grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -202,56 +204,75 @@
     color: #fff;
   }
   
-  .left, .right {
-    width: 50%;
-    padding: 30px;
+  .container{
+    max-width: 800px;
+    height: 600px;
+    background: #fff;
+    margin: 50px auto;
+    box-shadow: 0 0 20px rgba(72,98,85, 0.6);
+    box-sizing: border-box;
+    padding: 40px;
   }
   
-  .top {
-    margin-top: 80px;
-  }
-  
-  .mtop {
-    margin-top: 40px;
-  }
-  
-  .heading h1 {
-    font-size: 100px;
-    font-weight: 500;
-    opacity: 0.1;
-    font-family: serif;
-    position: absolute;
-    top: -30px;
-  }
-  
-  .heading h2 {
-    margin: 30px 0;
+  p{
+    text-align: center;
+    letter-spacing: 1px;  
     font-size: 45px;
-    font-family: serif;
-    font-weight: 400;
+    margin-bottom: 20px;
+    color: #7fc142;
   }
   
-  .about .heading h1 {
-    top: 55px;
+  .input,
+  .msg .area{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    border: 2px solid #e9eaea;
+    font-size: 14px;
+    border-radius: 5px;
+    outline: none;
+    transform: all 0.5s ease;
   }
   
-  .about {
-    position: relative;
+  .login .input{
+    width: 48%;
+    float: left;
+    margin-right: 4%;
   }
   
-  .about .left {
-    margin-top: 30px;
+  .login .input:last-child{
+    margin-right: 0;
   }
   
-  .about p {
-    font-size: 15px;
+  .msg .area{
+    height: 200px;
   }
   
-  .about button {
-    margin: 30px 0;
+  .btn{
+    width: 250px;
+    background:  #7fc142;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0 auto;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
   }
   
- 
-
+  .input:focus,
+  .msg .area:focus{
+    border: 2px solid  #7fc142;
+  }
+  
+  ::-webkit-input-placeholder{
+    font-family: 'roboto';
+  }
+  
+  
+  
+  
   
  
